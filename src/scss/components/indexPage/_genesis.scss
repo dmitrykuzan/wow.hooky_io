@@ -1,0 +1,39 @@
+.genesis {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20rem;
+  min-height: 80rem;
+
+  &__wrapper {
+    position: initial;
+  }
+
+  &__image {
+    margin-right: 3rem;
+    max-width: 77rem;
+
+    @media (max-width: em(992)) {
+      margin-right: initial;
+    }
+  }
+
+  &__content {
+    margin-left: auto;
+    height: max-content;
+    max-width: 69rem;
+
+    @media (max-width: em(1660)) {
+      margin-top: 6rem;
+    }
+
+    @media (max-width: em(992)) {
+      margin-right: auto;
+    }
+
+    @media (max-width: em(575)) {
+      margin-top: -5rem;
+    }
+  }
+}

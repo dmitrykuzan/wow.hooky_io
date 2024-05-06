@@ -1,0 +1,42 @@
+<section class="hero">
+  <div class="hero__player">
+    <video
+      controls="false"
+      autoplay="false"
+      muted
+      loop
+      playsinline
+      style="pointer-events: none"
+    >
+      <source src="img/video/video.mp4" type="video/mp4" />
+      <source src="img/video/video.webm" type="video/webm" />
+    </video>
+    <div class="hero__controls container">
+      <a href="#benefits" class="hero__anchor">
+        <picture>
+          <source
+            srcset="img/hero/anchor@1x.webp 1x, img/hero/anchor@2x.webp 2x"
+            type="image/webp"
+          />
+          <img
+            src="img/hero/anchor@1x.png"
+            srcset="img/hero/anchor@2x.png 2x"
+            width="36"
+            height="65"
+            aria-hidden="true"
+            loading="lazy"
+          />
+        </picture>
+      </a>
+      <button class="hero__button-sound active">
+        <img
+          src="img/ui/button-sound.svg"
+          width="70"
+          height="70"
+          loading="lazy"
+          alt="sound icon"
+        />
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,132 @@
+.vr {
+  margin-top: 10rem;
+
+  &.show {
+    .vr__title {
+      opacity: 1;
+    }
+
+    .vr__wrapper-video-inner {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    text-align: right;
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    &-sticky {
+      position: absolute;
+      left: calc((100vw - 120rem - var(--scrollbar-width)) / -2);
+      top: 0;
+      width: calc(100vw - var(--scrollbar-width) - 4rem);
+      height: 100%;
+
+      @media (max-width: em(1260)) {
+        left: -1.5rem;
+        width: calc(100% + 3rem);
+      }
+    }
+
+    &-video {
+      position: sticky;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      mix-blend-mode: lighten;
+      transition: transform var(--transition);
+
+      &-content {
+        @media (max-width: em(767)) {
+          transform: scale(2);
+        }
+      }
+
+      &-inner {
+        overflow: hidden;
+        opacity: 0;
+        transform: translateX(50%);
+        transition: opacity var(--transition);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 110vh;
+
+    &.active {
+      .vr__item-content {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &--right {
+      align-self: flex-end;
+    }
+
+    @media (max-width: em(767)) {
+      height: 80vh;
+    }
+  }
+
+  &__item-content {
+    padding-left: 1.5rem;
+    max-width: 45rem;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity var(--transition), transform var(--transition);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0.2rem;
+      height: 100%;
+      background-image: url(../img/vr/item-list-decor.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 2.5rem;
+    max-width: 30rem;
+    font-weight: 600;
+    font-size: fluid-font(3.2rem, 2rem);
+    line-height: 110%;
+    color: var(--clr-default-100);
+  }
+
+  &__text {
+    p {
+      line-height: 170%;
+      color: var(--clr-default-300);
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

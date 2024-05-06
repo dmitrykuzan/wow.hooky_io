@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Hooky</title>
+    <meta name="description" lang="en" content="Description web-site" />
+
+    @include("html/common/head.html")
+  </head>
+  <body class="lock">
+  <body>
+    @include("html/common/loader.html")
+    <div class="wrapper" data-overlay="false">
+      <div class="body__particles" id="particles--1"></div>
+      @include("html/common/header.html")
+      <main>
+        @include("html/indexPage/hero.html")
+        @include("html/indexPage/benefits.html")
+        @include("html/indexPage/statistic.html")
+        @include("html/indexPage/secure.html")
+        @include("html/indexPage/vr.html")
+        @include("html/indexPage/distribution.html")
+        @include("html/indexPage/foundational.html")
+        @include("html/indexPage/genesis.html")
+        @include("html/indexPage/proudly.html")
+        @include("html/common/modal-registration.html")
+        @include("html/common/modal-thanks.html")
+      </main>
+      @include("html/common/footer.html")
+    </div>
+  </body>
+</html>

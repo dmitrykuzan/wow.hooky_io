@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 12rem;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    @media (max-width: em(767)) {
+      display: none;
+    }
+  }
+
+  @media (max-width: em(992)) {
+    min-height: 10rem;
+  }
+}

@@ -1,0 +1,231 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.main__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26rem;
+  min-height: 6rem;
+  font-weight: 600;
+  font-style: italic;
+  font-size: fluid-font(2rem, 1.8rem);
+  color: var(--clr-default-100);
+  transition: filter var(--transition);
+
+  p {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    background-image: url(../img/ui/button-bg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--dark {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 6rem;
+      background-image: url(../img/ui/button-dark.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:hover {
+    filter: drop-shadow(1px 1px 25px rgba(203, 32, 247, 0.45));
+    transition: filter var(--transition);
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: fluid-font(5.2rem, 2.4rem);
+  line-height: 105%;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    95.74deg,
+    #d2d8de 2.3%,
+    #feffff 23.97%,
+    #c0c3c6 47.98%,
+    #b6bbbf 74.36%,
+    #acb2b7 91.31%
+  );
+  -webkit-background-clip: text;
+  background-color: var(--clr-default-400);
+
+  &--top {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2rem;
+      top: -2rem;
+      width: 5rem;
+      height: 6.5rem;
+      background-image: url(../img/ui/title-top.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: em(1260)) {
+      padding-left: 3rem;
+
+      &::before {
+        left: 0;
+      }
+    }
+
+    @media (max-width: em(575)) {
+      padding-left: initial;
+      line-height: 110%;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &--bottom {
+    position: relative;
+    padding-bottom: 3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 7rem;
+      bottom: 0;
+      width: 22rem;
+      height: 1.7rem;
+      background-image: url(../img/ui/title-bot.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: em(1200)) {
+      padding-bottom: initial;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.subtitle {
+  font-size: fluid-font(3.2rem, 2rem);
+  line-height: 110%;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+      97.09deg,
+      #d2d8de 2.53%,
+      #feffff 18.77%,
+      #c0c3c6 36.77%,
+      #b6bbbf 56.54%,
+      #acb2b7 69.25%
+    ),
+    #ffffff;
+  -webkit-background-clip: text;
+  background-color: var(--clr-default-400);
+}
+
+.description {
+  p {
+    line-height: 170%;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+        97.09deg,
+        #d2d8de 2.53%,
+        #feffff 18.77%,
+        #c0c3c6 36.77%,
+        #b6bbbf 56.54%,
+        #acb2b7 69.25%
+      ),
+      #ffffff;
+    -webkit-background-clip: text;
+    background-color: var(--clr-default-400);
+  }
+}
+
+.item {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+      97.09deg,
+      #d2d8de 2.53%,
+      #feffff 18.77%,
+      #c0c3c6 36.77%,
+      #b6bbbf 56.54%,
+      #acb2b7 69.25%
+    ),
+    #ffffff;
+  -webkit-background-clip: text;
+  background-color: var(--clr-default-400);
+}
+
+.title-slider {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    95.76deg,
+    #d2d8de 2.31%,
+    #feffff 21.48%,
+    #c0c3c6 42.75%,
+    #b6bbbf 66.1%,
+    #acb2b7 81.11%
+  );
+  -webkit-background-clip: text;
+  background-color: var(--clr-default-400);
+}
+
+.image__blur {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 0;
+    width: 25rem;
+    height: 25rem;
+    background: linear-gradient(
+      112.73deg,
+      rgba(30, 79, 198, 0.55) 1.67%,
+      rgba(94, 30, 198, 0.55) 100%
+    );
+    filter: blur(14rem);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+}
+
+.body__particles {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
