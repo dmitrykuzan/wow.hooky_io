@@ -1,0 +1,61 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_163_764)">
+<circle cx="30" cy="30" r="30" transform="rotate(90 30 30)" fill="#1A1737"/>
+<circle cx="30" cy="30" r="29.7804" transform="rotate(90 30 30)" stroke="url(#paint0_linear_163_764)" stroke-width="0.439295"/>
+</g>
+<g filter="url(#filter1_b_163_764)">
+<circle cx="29.5" cy="30.5" r="22.5" transform="rotate(90 29.5 30.5)" fill="#362987"/>
+<circle cx="29.5" cy="30.5" r="22.2804" transform="rotate(90 29.5 30.5)" stroke="url(#paint1_linear_163_764)" stroke-width="0.439295"/>
+</g>
+<g filter="url(#filter2_b_163_764)">
+<circle cx="29.5" cy="30.5" r="17.5" transform="rotate(90 29.5 30.5)" fill="#9460FF"/>
+<circle cx="29.5" cy="30.5" r="17.2804" transform="rotate(90 29.5 30.5)" stroke="url(#paint2_linear_163_764)" stroke-width="0.439295"/>
+</g>
+<g filter="url(#filter3_b_163_764)">
+<circle cx="29.5" cy="30.5" r="12.5" transform="rotate(90 29.5 30.5)" fill="#F9F8F9"/>
+<circle cx="29.5" cy="30.5" r="12.2804" transform="rotate(90 29.5 30.5)" stroke="url(#paint3_linear_163_764)" stroke-width="0.439295"/>
+</g>
+<path d="M28 36L33.5 30.5L28 25" stroke="#8320F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_b_163_764" x="-16.2539" y="-16.2539" width="92.5078" height="92.5078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.12695"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_163_764"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_163_764" result="shape"/>
+</filter>
+<filter id="filter1_b_163_764" x="-9.2539" y="-8.2539" width="77.5078" height="77.5078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.12695"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_163_764"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_163_764" result="shape"/>
+</filter>
+<filter id="filter2_b_163_764" x="-4.2539" y="-3.2539" width="67.5078" height="67.5078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.12695"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_163_764"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_163_764" result="shape"/>
+</filter>
+<filter id="filter3_b_163_764" x="0.746098" y="1.7461" width="57.5078" height="57.5078" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.12695"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_163_764"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_163_764" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_163_764" x1="30" y1="-1.90735e-06" x2="30" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.72"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_163_764" x1="29.5" y1="8" x2="29.5" y2="53" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.72"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_163_764" x1="29.5" y1="13" x2="29.5" y2="48" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.72"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear_163_764" x1="29.5" y1="18" x2="29.5" y2="43" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.72"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
